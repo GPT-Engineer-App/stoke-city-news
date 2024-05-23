@@ -1,4 +1,5 @@
 import { Container, VStack, Heading, Text, Box, Image, Link, IconButton } from "@chakra-ui/react";
+import Navigation from "../components/Navigation.jsx";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const newsArticles = [
@@ -25,7 +26,8 @@ const newsArticles = [
 const Index = () => {
   return (
     <Container maxW="container.lg" py={8}>
-      <VStack spacing={8} align="stretch">
+      <Navigation />
+      <VStack spacing={8} align="stretch" mt={4}>
         <Heading as="h1" size="2xl" textAlign="center">
           Stoke City News
         </Heading>
